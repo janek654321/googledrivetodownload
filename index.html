@@ -9,10 +9,11 @@
 <button onclick="myFunction()">Konwertuj</button>
 <script>
 function myFunction() {
-  var str = document.getElementById("link").value; 
+  var str = document.getElementById("link").value;
   var res = str.replace("/file/d/", "/uc?id=");
-  var res2 = res.replace("/view?usp=sharing", "&export=download");
-  document.getElementById("link").value = res2;
+  var res2 = res.replace("drivesdk", "sharing");
+  var res3 = res2.replace("/view?usp=sharing", "&export=download");
+  document.getElementById("link").value = res3;
 }
 </script>
 
