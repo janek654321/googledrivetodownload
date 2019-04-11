@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Tu wklej link do pliku na dysku google:</p>
+
+<input type="text" id="link" value="">
+</br>
+<button onclick="myFunction()">Konwertuj</button>
+<script>
+function myFunction() {
+  var str = document.getElementById("link").value; 
+  var res = str.replace("/file/d/", "/uc?id=");
+  var res2 = res.replace("/view?usp=sharing", "&export=download");
+  document.getElementById("link").value = res2;
+}
+</script>
+
+</body>
+</html>
