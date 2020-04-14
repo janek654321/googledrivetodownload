@@ -9,17 +9,20 @@
 <p>Tu wklej link:</p>
   
 <input type="text" id="link" value="" size="100">
-  <label id="xd" text="1sd">
-    
+
+
 </br>
 <button onclick="myFunction()">Konwertuj</button>
+<p>Wyjście:</p>
+<input type="text" id="wyj" value="" size="100">
+
 <script>
 function myFunction() {
   var str = document.getElementById("link").value;
   var res = str.replace("/file/d/", "/uc?id=");
   var res2 = res.replace("drivesdk", "sharing");
   var res3 = res2.replace("/view?usp=sharing", "&export=download");
-  document.getElementById("link").value = res3;
+  document.getElementById("wyj").value = res3;
 }
 </script>
 
